@@ -1,0 +1,1031 @@
+/*
+Theme Name:   realhome
+Description:  RealHome - Thème de Pierre-Yves Hattais
+Author:       Pierre-Yves Hattais
+Author URI:   http://www.pierrehats.com
+Version:      1.0.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header navbar */ 
+
+.header {
+    display: grid;
+    grid-template-rows: 1;
+
+    grid-template-areas:
+        "l n s";
+
+    grid-gap: 30px;
+    grid-template-columns: 300px 700px 200px;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 8px 6px -6px rgb(121, 121, 121);
+}
+
+.logo {
+    grid-area: l;
+}
+
+.navigation {
+    max-height: 60px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+
+}
+
+.navigation ul {
+    grid-area: n;
+    padding-inline-start: 0px;
+    margin: 0;
+    justify-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+}
+
+.navigation ul li a {
+    padding: 0px 0px;
+    margin: 20px 20px;
+    max-height: 60px;
+}
+
+
+.navigation ul li {
+    padding: 18px 0px;
+    margin: 0px 0px;
+    max-height: 60px;
+    transition: background-color 300ms ease-out;
+}
+
+.navigation ul li:hover {
+    background-color: rgb(233, 233, 233);
+    
+}
+
+.navigation ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.logo {
+    height: 40px;
+    align-self: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    transition: filter 150ms ease-out;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 0.2em rgb(0, 0, 0));
+}
+
+.social-network {
+    grid-area: s;
+    margin-top: 14px;
+    text-align: center;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 30px 30px 30px 30px;
+}
+
+.social-network img {
+    transition: filter 150ms ease-out;
+}
+
+.social-network img:hover {
+    filter: drop-shadow(0 0 0.2em rgb(0, 0, 0));
+}
+
+/* footer */
+
+.footer {
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    height: 310px;
+    width: 1200px;
+    margin: auto;
+}
+
+.logo-social-container {
+    width: 20%;
+    margin: 20px 30px;
+}
+
+.menu-footer {
+    width: 40%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.navigation-footer ul {
+    padding-left: 0;
+}
+
+.navigation-footer li {
+    list-style-type: none;
+    margin-top: 10px;
+    transition: filter 100ms ease-out;
+}
+.navigation-footer li:hover {
+    filter: drop-shadow(0 0 0.2em rgb(218, 218, 218));
+}
+
+.navigation-footer li a {
+    color: rgb(255, 255, 255);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+
+}
+
+
+.info-contact-footer {
+    width: 20%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.c-info-f {
+    color: rgb(255, 255, 255);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.c-info-f-adress {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.c-info-f-mail {
+    margin-top: 10px;
+    color: rgb(218, 49, 49);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.c-info-f-mail a {
+    margin-top: 10px;
+    color: rgb(218, 49, 49);
+}
+
+.title-footer {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+.logo-footer {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    width: 180px;
+    transition: filter 150ms ease-out;
+}
+
+.logo-footer:hover {
+    filter: drop-shadow(0 0 0.2em rgb(218, 218, 218));
+}
+
+.social-network-footer img {
+    margin: 0 3px;
+    transition: filter 150ms ease-out;
+}
+
+.social-network-footer img:hover {
+    filter: drop-shadow(0 0 0.2em rgb(218, 218, 218));
+}
+
+.social-network-footer a {
+    text-decoration: none;
+}
+
+/* image fontpage */
+
+.home-image {
+    height: 970px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-text {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color: white;
+    height: 970px;
+    box-shadow: inset 0 8px 6px -6px rgb(121, 121, 121);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* intro frontpage */
+
+.wrapper-intro {
+    margin: 100px 0;
+    justify-content: center;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 300px 600px;
+}
+
+.title-intro {
+    text-align: right;
+    font-family: 'Raleway', sans-serif;
+    justify-items: center;
+    grid-row: 1;
+}
+
+.text-intro {
+    justify-items: center;
+    font-family: 'Playfair Display', serif;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.company-info {
+    background-color: rgb(245, 245, 245);
+    padding: 60px 0;
+    justify-content: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 220px 220px 220px 220px;
+}
+
+.bloc-info {
+    text-align: center;
+    justify-items: center;
+    grid-row: 1;
+}
+
+.title-info {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    justify-items: center;
+}
+
+.text-info {
+    justify-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8em;
+    color: rgb(88, 88, 88);
+}
+
+/* properties */
+
+.title-properties {
+    margin: 40px 0;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.card-propertie {
+    font-family: "Gill Sans", sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-width: 1px;
+    border-radius: 2px;
+    margin: 10px 10px;
+    max-width: 300px;
+}
+
+.card-img {
+    -webkit-filter: brightness(100%);
+}
+
+
+.card-img:hover {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.main-card-info h3 {
+    margin-bottom: 8px;
+}
+
+.second-card-info {
+    border-top-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-width: 1px;
+}
+
+.container-properties {
+    margin-left: 90px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.show-properties-front {
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.hr-intro {
+    margin-right: 0;
+    background-color: rgb(0, 0, 0);
+    height: 2.5px;
+    width: 25px;
+    border-style: none;
+}
+
+.hr-properties {
+    background-color: rgb(207, 66, 66);
+    height: 2px;
+    width: 70px;
+    border-style: none;
+}
+
+.text-properties-front {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9em;
+    color: rgb(88, 88, 88);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-properties-front p {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.card-city {
+    margin-top: 0px;
+    color: rgb(126, 126, 126);
+    font-size: 0.8;
+}
+
+.price-propertie {
+    color: rgb(207, 66, 66);
+    font-size: 0.8;
+    margin-bottom: 20px;
+}
+
+.second-card-info {
+    justify-content: space-around;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    color: rgb(126, 126, 126);
+    font-size: 0.8;
+}
+
+.second-card-info div {
+    padding: 10px 0;
+}
+
+.title-propertie {
+    text-decoration: none;
+    color: #000;
+}
+
+/* single propertie */
+
+.single-p-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 340px 340px 350px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "title title title"
+        "image image desc"
+        "image image desc"
+        "prop prop prop";
+}
+
+.single-p-title {
+    grid-area: title;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.7em;
+
+}
+
+.single-p-image {
+    grid-area: image;
+
+}
+
+.single-p-desc {
+    grid-area: desc;
+
+}
+
+.single-p-properties {
+    grid-area: prop;
+
+}
+
+
+.single-p-price {
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(207, 66, 66);
+    font-size: 1.5em;
+}
+
+.single-p-city {
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(126, 126, 126);
+    font-size: 0.8;
+}
+
+.single-p-size {
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(126, 126, 126);
+    font-size: 0.8;
+}
+
+.single-p-rooms {
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(126, 126, 126);
+    font-size: 0.8;
+}
+
+.single-p-bathroom {
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(126, 126, 126);
+    font-size: 0.8;
+}
+
+.single-p-info {
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(126, 126, 126);
+    font-size: 0.8;
+}
+
+.single-p-description {
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(126, 126, 126);
+    font-size: 0.7;
+}
+
+.grey-line-1 {
+    background-color: rgb(226, 226, 226);
+    height: 2px;
+    width: 340px;
+    border-style: none;
+}
+
+.grey-line-2 {
+    background-color: rgb(226, 226, 226);
+    height: 2px;
+    width: 1100px;
+    border-style: none;
+}
+
+/* a propos */
+
+.about-intro {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1010px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 250px 250px 230px 230px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "image image intro intro"
+        "image image intro intro"
+}
+
+.title-about {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 140px;
+    font-family: "Gill Sans", sans-serif;
+
+}
+
+.about-picture {
+    grid-area: image;
+    width: 500px;
+
+}
+
+.about-text {
+    grid-area: intro;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(126, 126, 126);
+    font-size: 0.8;
+}
+
+.bloc-team {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 1100px;
+    justify-content: center;
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: 250px 250px 250px 250px;
+}
+
+.team-card {
+    text-align: center;
+    justify-items: center;
+    grid-row: 1;
+}
+
+.title-team {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family: "Gill Sans", sans-serif;
+
+}
+
+
+/* liste ville */
+
+.gabarit-ville {
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 1000px;
+}
+
+.gabarit-ville li {
+    float: left;
+    -webkit-transition: 0.5s ease;
+}
+
+.gabarit-ville li a {
+    display: block;
+    color: rgb(48, 48, 48);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(255, 255, 255);;
+}
+
+.gabarit-ville li a:hover {
+    border-bottom: 2px solid rgb(241, 73, 73);;
+
+}
+
+/* button lire suite */
+
+.lire-suite {
+    background-color: rgb(207, 66, 66);
+    border: none;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(207, 66, 66);
+}
+
+.lire-suite:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(207, 66, 66);
+}
+
+.button-show {
+    background-color: rgb(207, 66, 66);
+    border: none;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(207, 66, 66);
+}
+
+.button-show:hover {
+    background-color: rgb(235, 235, 235);
+    color: rgb(207, 66, 66);
+}
+
+/* page actualités */
+
+.home-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.news-container {
+    margin-left: auto;
+    margin-right: 30px;
+    width: 60%;
+    color: rgb(48, 48, 48);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.9em;
+}
+
+.home-container h2 {
+    font-size: 1.8em;
+    font-weight: lighter;
+}
+
+.home-container p {
+    color: rgb(126, 126, 126);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.9em;
+}
+
+.rpwwt-post-excerpt {
+    margin-top: 10px;
+    color: rgb(126, 126, 126);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.9em;
+}
+
+.rpwwt-post-date {
+    margin-top: 10px;
+}
+
+
+.sidebar-container {
+    margin-left: 30px;
+    margin-right: auto;
+    width: 30%;
+    color: rgb(48, 48, 48);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.9em;
+}
+
+.sidebar-container a {
+    color: rgb(48, 48, 48);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.cat-item {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.news-picture {
+    width: 100%;
+}
+
+.grey-line-news {
+    background-color: rgb(231, 230, 230);
+    height: 2px;
+    width: 660px;
+    border-style: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+/* news single */
+
+.news-container-single {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 60%;
+    color: rgb(48, 48, 48);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.9em;
+}
+
+/* contact */
+
+.contact-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.title-contact {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.info-message-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.contact-info {
+    margin-left: auto;
+    margin-right: 30px;
+    width: 25%;
+    color: rgb(107, 107, 107);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.9em;
+}
+
+.contact-message {
+    margin-left: auto;
+    width: 70%;
+    color: rgb(107, 107, 107);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.9em;
+}
+
+.title-contact-info {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: rgb(49, 49, 49);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: normal;
+
+}
+
+.title-contact-message {
+    margin-bottom: 27px;
+    margin-top: 40px;
+    color: rgb(49, 49, 49);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1.8em;
+    font-weight: normal;
+
+}
+
+.c-info {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* form-contact */
+
+.contact-subinput {
+    display: flex;
+}
+
+.contact-name {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.contact-mail {
+    width: 50%;
+    margin-left: 32px;
+}
+
+.contact-subinput input {
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.contact-subinput label ::placeholder{
+    font-size: 1.3em;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(172, 172, 172);
+}
+
+.contact-message-textarea {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-message-textarea textarea {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.contact-message-textarea label::placeholder {
+    font-size: 1.3em;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(172, 172, 172);
+}
+
+.contact-submit input {
+    background-color: rgb(207, 66, 66);
+    border: none;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(207, 66, 66);
+}
+
+.contact-submit input:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(207, 66, 66);
+}
+
+/* nos agents frontpage */
+
+.agents-front {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.agents-front-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.agents-front-image img {
+    max-width: 300px;
+}
+
+.agents-front-detail {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.hr-agents {
+    margin-left: 0;
+    background-color: rgb(207, 66, 66);
+    height: 2px;
+    width: 70px;
+    border-style: none;
+    text-align: left;
+}
+
+.title-agents {
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.text-agent-front {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9em;
+    color: rgb(88, 88, 88);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.name-agent-front {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* our partners front */
+
+.partners-front {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.partners-links {
+    text-align: center;
+    margin: auto;
+}
+
+.partners-links a {
+    text-align: center;
+    margin: auto;
+}
+
+/* comments */
+
+.comment-form-comment textarea {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-submit input {
+    background-color: rgb(207, 66, 66);
+    font-family: "Gill Sans", sans-serif;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(207, 66, 66);
+}
+
+.form-submit input:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(207, 66, 66);
+}
+
+.commentlist {
+    background-color: rgb(235, 235, 235);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.reply {
+    margin-bottom: 20px;
+}
+
+.logged-in-as a {
+    color: rgb(88, 88, 88); 
+
+}
+
+.commentlist a {
+    text-decoration: none;
+    color: rgb(88, 88, 88); 
+}
+
+.commentlist p {
+    font-family: 'Playfair Display', serif;
+        font-size: 0.9em;
+        color: rgb(88, 88, 88);
+}
