@@ -15,7 +15,7 @@
             <?php endif; ?>
         </div>
         <div class="single-p-desc">
-            <div class="single-p-price"><?php the_field('price_p'); ?></div>
+            <div class="single-p-price"><i class="fas fa-bookmark"></i> <?php the_field('price_p'); ?></div>
 
             <hr class="grey-line-1">
 
